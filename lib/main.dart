@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:flask_image/homescreen.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:http/http.dart' as http;
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(),
-      home: const MyHomePage(),
+      home: const HomeScreen(),
     );
   }
 }
@@ -91,3 +92,6 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+
+
